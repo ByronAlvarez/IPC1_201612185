@@ -253,7 +253,6 @@ public class Tab {
                     jPanel1.add(vecG[i][j], BorderLayout.CENTER);
                     jPanel1.repaint();
                 }
-
             }
         }
     }
