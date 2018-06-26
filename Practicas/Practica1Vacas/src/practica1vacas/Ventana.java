@@ -298,7 +298,7 @@ public class Ventana extends javax.swing.JFrame {
             aux = aux.getSiguiente();
         }
         
-        /*
+        
         jTextArea1.append("**********" + "PASAJEROS" + "**********" + "\n");
         while (auxP != null) {
             jTextArea1.append("\t----" + auxP.getPasajero().getNombre() + "-----");
@@ -318,7 +318,7 @@ public class Ventana extends javax.swing.JFrame {
             }
 
         } while (auxM != listaMaletas.getCabeza());
-*/
+
         jTextArea1.append("**********" + "ESTACIONES" + "**********" + "\n");
 
         while (auxMante != null) {
