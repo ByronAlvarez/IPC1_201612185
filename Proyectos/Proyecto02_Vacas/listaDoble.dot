@@ -1,11 +1,16 @@
 digraph listadoble{
 label="Aviones";
-nodo672129649[label="Avion1 : 3"];
-nodo672129649->nodo1861506898;
-nodo1861506898->nodo672129649;
-nodo1861506898[label="Avion2 : 2"];
-nodo1861506898->nodo2037190356;
-nodo2037190356->nodo1861506898;
-nodo2037190356[label="Avion3 : 2"];
+nodo1990490935[label="Avion1
+Tipo: 2
+Pasajeros: 18
+Desabordaje: 1
+Mantenimiento: 3"];
+nodo1990490935->nodo1042138406;
+nodo1042138406->nodo1990490935;
+nodo1042138406[label="Avion2
+Tipo: 2
+Pasajeros: 22
+Desabordaje: 2
+Mantenimiento: 3"];
 
 }

@@ -1,4 +1,197 @@
-digraph listadole{
+digraph T{
+subgraph cluster_0{
+label="Aviones";
+nodo1990490935[label="Avion1
+Tipo: 2
+Pasajeros: 18
+Desabordaje: 1
+Mantenimiento: 3"];
+nodo1990490935->nodo1042138406;
+nodo1042138406->nodo1990490935;
+nodo1042138406[label="Avion2
+Tipo: 2
+Pasajeros: 22
+Desabordaje: 2
+Mantenimiento: 3"];
+
+}subgraph cluster_1{
+label="Pasajeros";
+nodo601545583[label="Pasajero6
+ Maletas:4
+ Documentos:2
+ Registro:3"];
+nodo601545583->nodo1635904888;
+nodo1635904888[label="Pasajero7
+ Maletas:2
+ Documentos:1
+ Registro:3"];
+nodo1635904888->nodo871064337;
+nodo871064337[label="Pasajero8
+ Maletas:3
+ Documentos:6
+ Registro:1"];
+nodo871064337->nodo2106601077;
+nodo2106601077[label="Pasajero9
+ Maletas:1
+ Documentos:7
+ Registro:3"];
+nodo2106601077->nodo140808971;
+nodo140808971[label="Pasajero10
+ Maletas:2
+ Documentos:6
+ Registro:2"];
+nodo140808971->nodo1717589330;
+nodo1717589330[label="Pasajero11
+ Maletas:2
+ Documentos:5
+ Registro:2"];
+nodo1717589330->nodo242962788;
+nodo242962788[label="Pasajero12
+ Maletas:2
+ Documentos:10
+ Registro:1"];
+nodo242962788->nodo1927558488;
+nodo1927558488[label="Pasajero13
+ Maletas:1
+ Documentos:6
+ Registro:3"];
+nodo1927558488->nodo1580469444;
+nodo1580469444[label="Pasajero14
+ Maletas:3
+ Documentos:5
+ Registro:3"];
+nodo1580469444->nodo974784661;
+nodo974784661[label="Pasajero15
+ Maletas:2
+ Documentos:6
+ Registro:1"];
+nodo974784661->nodo1849597635;
+nodo1849597635[label="Pasajero16
+ Maletas:2
+ Documentos:1
+ Registro:3"];
+nodo1849597635->nodo1025714345;
+nodo1025714345[label="Pasajero17
+ Maletas:2
+ Documentos:2
+ Registro:2"];
+nodo1025714345->nodo1133466085;
+nodo1133466085[label="Pasajero18
+ Maletas:4
+ Documentos:7
+ Registro:1"];
+nodo1133466085->nodo187440200;
+nodo187440200[label="Pasajero19
+ Maletas:2
+ Documentos:10
+ Registro:1"];
+nodo187440200->nodo2045965581;
+nodo2045965581[label="Pasajero20
+ Maletas:2
+ Documentos:1
+ Registro:1"];
+nodo2045965581->nodo1225424475;
+nodo1225424475[label="Pasajero21
+ Maletas:3
+ Documentos:4
+ Registro:3"];
+nodo1225424475->nodo435074729;
+nodo435074729[label="Pasajero22
+ Maletas:2
+ Documentos:7
+ Registro:2"];
+nodo435074729->nodo1917532032;
+nodo1917532032[label="Pasajero23
+ Maletas:4
+ Documentos:1
+ Registro:1"];
+nodo1917532032->nodo478146137;
+nodo478146137[label="Pasajero24
+ Maletas:1
+ Documentos:8
+ Registro:2"];
+nodo478146137->nodo110994219;
+nodo110994219[label="Pasajero25
+ Maletas:1
+ Documentos:9
+ Registro:3"];
+nodo110994219->nodo1781143215;
+nodo1781143215[label="Pasajero26
+ Maletas:1
+ Documentos:7
+ Registro:3"];
+nodo1781143215->nodo1098308445;
+nodo1098308445[label="Pasajero27
+ Maletas:3
+ Documentos:9
+ Registro:1"];
+nodo1098308445->nodo572057612;
+nodo572057612[label="Pasajero28
+ Maletas:2
+ Documentos:10
+ Registro:2"];
+nodo572057612->nodo1240957855;
+nodo1240957855[label="Pasajero29
+ Maletas:2
+ Documentos:9
+ Registro:2"];
+nodo1240957855->nodo1934781280;
+nodo1934781280[label="Pasajero30
+ Maletas:4
+ Documentos:7
+ Registro:2"];
+nodo1934781280->nodo76147300;
+nodo76147300[label="Pasajero31
+ Maletas:2
+ Documentos:8
+ Registro:3"];
+nodo76147300->nodo1639197297;
+nodo1639197297[label="Pasajero32
+ Maletas:3
+ Documentos:8
+ Registro:2"];
+nodo1639197297->nodo338339491;
+nodo338339491[label="Pasajero33
+ Maletas:1
+ Documentos:7
+ Registro:2"];
+nodo338339491->nodo1950602797;
+nodo1950602797[label="Pasajero34
+ Maletas:3
+ Documentos:10
+ Registro:1"];
+nodo1950602797->nodo1062393867;
+nodo1062393867[label="Pasajero35
+ Maletas:1
+ Documentos:9
+ Registro:1"];
+nodo1062393867->nodo2146802226;
+nodo2146802226[label="Pasajero36
+ Maletas:1
+ Documentos:7
+ Registro:1"];
+nodo2146802226->nodo1043018961;
+nodo1043018961[label="Pasajero37
+ Maletas:3
+ Documentos:8
+ Registro:1"];
+nodo1043018961->nodo1412657031;
+nodo1412657031[label="Pasajero38
+ Maletas:1
+ Documentos:4
+ Registro:1"];
+nodo1412657031->nodo2097706890;
+nodo2097706890[label="Pasajero39
+ Maletas:2
+ Documentos:9
+ Registro:3"];
+nodo2097706890->nodo788481555;
+nodo788481555[label="Pasajero40
+ Maletas:2
+ Documentos:9
+ Registro:1"];
+
+}subgraph cluster_2{
 label="Maletas";
 nodo932500556[label="Maletas: 10"];
 nodo932500556->nodo1198344437;
@@ -229,4 +422,72 @@ nodo928156092[label="Maletas: 85"];
 nodo928156092->nodo932500556;
 nodo932500556->nodo928156092;
 
-}
+}subgraph cluster_3{
+label="Escritorios";
+nodo885182170[label="EscritorioA
+ Nombre: Pasajero1
+ Maletas3
+ Documentos3
+ Registro2"];
+nodo556862318[label="Pasajero2
+ Maletas3
+ Documentos8
+ Registro3"];
+nodo556862318->nodo24280942;
+nodo24280942[label="Pasajero3
+ Maletas: 1
+ Documentos: 10
+ Registro: 2"];
+nodo24280942->nodo257132484;
+nodo257132484[label="Pasajero4
+ Maletas: 1
+ Documentos: 8
+ Registro: 2"];
+nodo257132484->nodo745529595;
+nodo745529595[label="Pasajero5
+ Maletas: 1
+ Documentos: 9
+ Registro: 1"];
+nodo885182170->nodo2120713903;
+nodo2120713903->nodo885182170;
+nodo885182170->nodo556862318;
+nodo2120713903[label="EscritorioB
+ Nombre: Vacio
+ MaletasVacio
+ DocumentosVacio
+ RegistroVacio"];
+nodo2120713903->nodo3228833;
+nodo3228833->nodo2120713903;
+nodo3228833[label="EscritorioC
+ Nombre: Vacio
+ MaletasVacio
+ DocumentosVacio
+ RegistroVacio"];
+
+}subgraph cluster_4{
+label="Mantenimiento";
+nodo229765686[label="Estacion1
+ Nombre: Vacio
+Tipo: Vacio
+Pasajeros: Vacio
+Desabordaje: Vacio
+Mantenimiento: Vacio"];
+nodo229765686->nodo791107908;
+nodo791107908[label="Estacion2
+ Nombre: Vacio
+Tipo: Vacio
+Pasajeros: Vacio
+Desabordaje: Vacio
+Mantenimiento: Vacio"];
+nodo791107908->nodo1840771313;
+nodo1840771313[label="Estacion3
+ Nombre: Vacio
+Tipo: Vacio
+Pasajeros: Vacio
+Desabordaje: Vacio
+Mantenimiento: Vacio"];
+
+}subgraph cluster_5{
+label="Cola";
+
+}}

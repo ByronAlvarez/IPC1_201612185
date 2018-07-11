@@ -12,14 +12,16 @@ package practica1vacas;
 public class Pasajeros {
     private int maletas;
     private int documentos;
+    private int registro;
     private String nombre;
 
     public Pasajeros() {
     }
 
-    public Pasajeros(int maletas, int documentos) {
+    public Pasajeros(int maletas, int documentos, int registro) {
         this.maletas = maletas;
         this.documentos = documentos;
+        this.registro= registro;
     }
 
     /**
@@ -62,6 +64,20 @@ public class Pasajeros {
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    /**
+     * @return the registro
+     */
+    public int getRegistro() {
+        return registro;
+    }
+
+    /**
+     * @param registro the registro to set
+     */
+    public void setRegistro(int registro) {
+        this.registro = registro;
     }
     
 }

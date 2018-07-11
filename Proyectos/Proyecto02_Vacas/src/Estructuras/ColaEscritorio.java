@@ -40,6 +40,7 @@ public int getTamanio() {
             getUltimo().setSiguiente(a);
         }
         setUltimo(a);
+        tamanio++;
     }
 
     public Pasajeros quitar() throws Exception {
@@ -50,6 +51,7 @@ public int getTamanio() {
         } else {
             throw new Exception("Cola Vacia");
         }
+        tamanio--;
         return aux;
     }
 

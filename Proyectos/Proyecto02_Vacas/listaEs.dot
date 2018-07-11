@@ -1,0 +1,43 @@
+digraph G {
+label="Escritorios";
+nodo885182170[label="EscritorioA
+ Nombre: Pasajero1
+ Maletas3
+ Documentos3
+ Registro2"];
+nodo556862318[label="Pasajero2
+ Maletas3
+ Documentos8
+ Registro3"];
+nodo556862318->nodo24280942;
+nodo24280942[label="Pasajero3
+ Maletas: 1
+ Documentos: 10
+ Registro: 2"];
+nodo24280942->nodo257132484;
+nodo257132484[label="Pasajero4
+ Maletas: 1
+ Documentos: 8
+ Registro: 2"];
+nodo257132484->nodo745529595;
+nodo745529595[label="Pasajero5
+ Maletas: 1
+ Documentos: 9
+ Registro: 1"];
+nodo885182170->nodo2120713903;
+nodo2120713903->nodo885182170;
+nodo885182170->nodo556862318;
+nodo2120713903[label="EscritorioB
+ Nombre: Vacio
+ MaletasVacio
+ DocumentosVacio
+ RegistroVacio"];
+nodo2120713903->nodo3228833;
+nodo3228833->nodo2120713903;
+nodo3228833[label="EscritorioC
+ Nombre: Vacio
+ MaletasVacio
+ DocumentosVacio
+ RegistroVacio"];
+
+}

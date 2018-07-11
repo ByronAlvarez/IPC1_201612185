@@ -36,6 +36,7 @@ public class Ventana extends javax.swing.JFrame {
     int maletasss = 1;
     int elimM = 1;
     int nombreEsta = 1;
+    int documentos = 1;
 
     /**
      * Creates new form Ventana
@@ -76,11 +77,19 @@ public class Ventana extends javax.swing.JFrame {
         jTextField3 = new javax.swing.JTextField();
         jScrollPane7 = new javax.swing.JScrollPane();
         jTextArea5 = new javax.swing.JTextArea();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        jTextArea6 = new javax.swing.JTextArea();
         jLabel5 = new javax.swing.JLabel();
         jScrollPane5 = new javax.swing.JScrollPane();
         jLabel8 = new javax.swing.JLabel();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        jLabel9 = new javax.swing.JLabel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jLabel4 = new javax.swing.JLabel();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jLabel6 = new javax.swing.JLabel();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        jLabel7 = new javax.swing.JLabel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -125,6 +134,10 @@ public class Ventana extends javax.swing.JFrame {
         jTextArea5.setRows(5);
         jScrollPane7.setViewportView(jTextArea5);
 
+        jTextArea6.setColumns(20);
+        jTextArea6.setRows(5);
+        jScrollPane12.setViewportView(jTextArea6);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -161,9 +174,11 @@ public class Ventana extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
                     .addComponent(jScrollPane4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 251, Short.MAX_VALUE)
+                    .addComponent(jScrollPane12))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -190,31 +205,46 @@ public class Ventana extends javax.swing.JFrame {
                         .addGap(23, 23, 23)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 319, Short.MAX_VALUE)
-                            .addComponent(jScrollPane2)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(110, 110, 110)
-                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jScrollPane2)
+                            .addComponent(jScrollPane7))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 287, Short.MAX_VALUE)
-                    .addComponent(jScrollPane4))
+                    .addComponent(jScrollPane4)
+                    .addComponent(jScrollPane12))
                 .addContainerGap())
         );
 
-        jTabbedPane1.addTab("tab1", jPanel1);
+        jTabbedPane1.addTab("General", jPanel1);
 
         jLabel5.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jTabbedPane1.addTab("tab4", jLabel5);
+        jTabbedPane1.addTab("Aviones", jLabel5);
 
         jLabel8.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jScrollPane5.setViewportView(jLabel8);
 
-        jTabbedPane1.addTab("tab7", jScrollPane5);
+        jTabbedPane1.addTab("Pasajeros", jScrollPane5);
 
-        jLabel9.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jScrollPane6.setViewportView(jLabel9);
+        jLabel4.setToolTipText("");
+        jLabel4.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jScrollPane8.setViewportView(jLabel4);
 
-        jTabbedPane1.addTab("tab8", jScrollPane6);
+        jTabbedPane1.addTab("Maletas", jScrollPane8);
+
+        jLabel6.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jScrollPane9.setViewportView(jLabel6);
+
+        jTabbedPane1.addTab("Escritorios", jScrollPane9);
+
+        jLabel7.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jScrollPane10.setViewportView(jLabel7);
+
+        jTabbedPane1.addTab("Mantenimiento", jScrollPane10);
+
+        jLabel10.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jScrollPane11.setViewportView(jLabel10);
+
+        jTabbedPane1.addTab("Todo", jScrollPane11);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -273,6 +303,7 @@ public class Ventana extends javax.swing.JFrame {
         jButton2.setEnabled(false);
         jTextField1.setEditable(false);
         jTextField2.setEditable(false);
+        jTextField3.setEditable(false);
 
         generarImagenes();
 
@@ -283,25 +314,33 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
+    private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
@@ -312,10 +351,18 @@ public class Ventana extends javax.swing.JFrame {
         grafi.crearDot("listaDoble", lista.getCabeza());
         grafi.crearDotSimple("listaP", listaPasajeros.getCabeza());
         grafi.crearDotCircular("listaC", listaMaletas.getCabeza());
+        grafi.crearDotEscri("listaEs", listaEscritorios.getCabeza());
+        grafi.crearDotServi("listaM", listaMantenimiento.getCabeza(),colaa.getCabeza());
+        
+        grafi.crearDotTodo("listaT", lista.getCabeza(), listaPasajeros.getCabeza(),listaMaletas.getCabeza()
+                , listaMantenimiento.getCabeza(), listaEscritorios.getCabeza(), colaa.getCabeza());
 
         grafi.generarImagen("listaDoble.dot", "listaDoble.png");
         grafi.generarImagen("listaP.dot", "listaP.png");
         grafi.generarImagen("listaC.dot", "listaC.png");
+        grafi.generarImagen("listaEs.dot", "listaEs.png");
+        grafi.generarImagen("listaM.dot", "listaM.png");
+        grafi.generarImagen("listaT.dot", "listaT.png");
 
         ImageIcon imageIcon = new ImageIcon("C:\\Users\\Byron Alvarez\\Documents\\NetBeansProjects\\Proyecto02_Vacas\\listaDoble.png");
         Image imagen = imageIcon.getImage();
@@ -329,16 +376,41 @@ public class Ventana extends javax.swing.JFrame {
 
         ImageIcon imageIcon3 = new ImageIcon("C:\\Users\\Byron Alvarez\\Documents\\NetBeansProjects\\Proyecto02_Vacas\\listaC.png");
         Image imagen3 = imageIcon3.getImage();
-        Image imgtam3 = imagen3.getScaledInstance(jLabel9.getWidth(), jLabel9.getHeight(), Image.SCALE_SMOOTH);
+        //Image imgtam3 = imagen3.getScaledInstance(jLabel9.getWidth(), jLabel9.getHeight(), Image.SCALE_SMOOTH);
+        Image imgtam3 = imagen3.getScaledInstance(imageIcon3.getIconWidth(), imageIcon3.getIconHeight(), Image.SCALE_SMOOTH);
         ImageIcon per3 = new ImageIcon(imgtam3);
+        
+        ImageIcon imageIcon4 = new ImageIcon("C:\\Users\\Byron Alvarez\\Documents\\NetBeansProjects\\Proyecto02_Vacas\\listaEs.png");
+        Image imagen4 = imageIcon4.getImage();
+        Image imgtam4 = imagen4.getScaledInstance(jLabel6.getWidth(), jLabel6.getHeight(), Image.SCALE_SMOOTH);
+      //  Image imgtam4 = imagen4.getScaledInstance(imageIcon4.getIconWidth(),imageIcon4.getIconHeight(), Image.SCALE_SMOOTH);
+        ImageIcon per4 = new ImageIcon(imgtam4);
+        
+        ImageIcon imageIcon5 = new ImageIcon("C:\\Users\\Byron Alvarez\\Documents\\NetBeansProjects\\Proyecto02_Vacas\\listaM.png");
+        Image imagen5 = imageIcon5.getImage();
+        //Image imgtam5 = imagen5.getScaledInstance(jLabel7.getWidth(), jLabel7.getHeight(), Image.SCALE_SMOOTH);
+        Image imgtam5 = imagen5.getScaledInstance(imageIcon5.getIconWidth(),imageIcon5.getIconHeight(), Image.SCALE_SMOOTH);
+        ImageIcon per5 = new ImageIcon(imgtam5);
 
+        ImageIcon imageIcon6 = new ImageIcon("C:\\Users\\Byron Alvarez\\Documents\\NetBeansProjects\\Proyecto02_Vacas\\listaT.png");
+        Image imagen6 = imageIcon6.getImage();
+        //Image imgtam6 = imagen6.getScaledInstance(jLabel10.getWidth(), jLabel10.getHeight(), Image.SCALE_SMOOTH);
+        Image imgtam6 = imagen6.getScaledInstance(imageIcon6.getIconWidth(),imageIcon6.getIconHeight(), Image.SCALE_SMOOTH);
+        
+        ImageIcon per6 = new ImageIcon(imgtam6);
         jLabel5.setIcon(per);
         jLabel8.setIcon(per2);
-        jLabel9.setIcon(per3);
+        jLabel4.setIcon(per3);
+        jLabel6.setIcon(per4);
+        jLabel7.setIcon(per5);
+        jLabel10.setIcon(per6);
 
         per.getImage().flush();
         per2.getImage().flush();
         per3.getImage().flush();
+        per4.getImage().flush();
+        per5.getImage().flush();
+        per6.getImage().flush();
     }
 
     public void restarMante() {
@@ -431,7 +503,9 @@ public class Ventana extends javax.swing.JFrame {
         for (int i = 0; i < cantidad; i++) {
             int maletas = (int) Math.floor(Math.random() * 4 + 1);
             int documentos = (int) Math.floor(Math.random() * 10 + 1);
-            listaPasajeros.insertaralFinal(new Pasajeros(maletas, documentos));
+            int registro = (int) Math.floor(Math.random() * 3 + 1);
+
+            listaPasajeros.insertaralFinal(new Pasajeros(maletas, documentos, registro));
             agregarMaletas(maletas);
         }
     }
@@ -454,24 +528,69 @@ public class Ventana extends javax.swing.JFrame {
     public void eliminarPasajeros() {
 
         Nodo_ListaEscritorios aux = listaEscritorios.getCabeza();
-        
+        restarTurnoEscritorio();
+
         for (int i = 0; i < 5; i++) {
             if (listaPasajeros.getCabeza() == null) {
             } else {
-            //    System.out.println(aux.getEscritorio().getCola().getTamanio());
-               // while (aux !=null) {
-                    if(aux.getEscritorio().getCola().getTamanio()>=7){ 
-                    aux = aux.getSiguiente();
-                   }else{
-                    listaEscritorios.getCabeza().getEscritorio().getCola().insertar(listaPasajeros.getCabeza().getPasajero());
+                //    System.out.println(aux.getEscritorio().getCola().getTamanio());
+                //  while (aux !=null) {
+                if (aux != null && aux.getEscritorio().getPasajero() == null) {
+                    aux.getEscritorio().setPasajero(listaPasajeros.getCabeza().getPasajero());
+
+                    for (int j = 0; j < listaPasajeros.getCabeza().getPasajero().getDocumentos(); j++) {
+                        aux.getEscritorio().getPila().insertar(documentos);
+                        documentos = documentos + 1;
                     }
-             //   }
+
+                    //  aux.getEscritorio().getPila().insertar(listaPasajeros.getCabeza().getPasajero().getDocumentos());
+                } else if (aux != null) {
+                    if (aux.getEscritorio().getCola().getTamanio() >= 7) {
+                        aux = aux.getSiguiente();
+                    }
+                    if (aux != null && aux.getEscritorio().getCola().getTamanio() < 7) {
+                        aux.getEscritorio().getCola().insertar(listaPasajeros.getCabeza().getPasajero());
+                    } else {
+
+                    }
+                }
+                // if (aux != null) {
+                //     aux.getEscritorio().getCola().insertar(listaPasajeros.getCabeza().getPasajero());
+                // } else {
+
+                // }
+                //       }
                 eliminarMaletas(listaPasajeros.getCabeza().getPasajero().getMaletas());
                 listaPasajeros.eliminar(listaPasajeros.getCabeza().getPasajero());
             }
 
         }
 
+    }
+
+    public void restarTurnoEscritorio() {
+        Nodo_ListaEscritorios aux;
+        aux = listaEscritorios.getCabeza();
+        while (aux != null) {
+            if (aux.getEscritorio().getPasajero() != null) {
+                aux.getEscritorio().getPasajero().setRegistro(aux.getEscritorio().getPasajero().getRegistro() - 1);
+
+                if (aux.getEscritorio().getPasajero().getRegistro() == 0) {
+
+                    if (aux.getEscritorio().getCola().esVacia()) {
+                        aux.getEscritorio().setPasajero(null);
+                    } else {
+                        try {
+                            aux.getEscritorio().setPasajero(aux.getEscritorio().getCola().quitar());
+                        } catch (Exception ex) {
+                        }
+                    }
+
+                }
+
+            }
+            aux = aux.getSiguiente();
+        }
     }
 
     public void mostrar() {
@@ -523,7 +642,10 @@ public class Ventana extends javax.swing.JFrame {
 
             jTextArea2.append("\n\tMaletas: "
                     + auxP.getPasajero().getMaletas() + "\n\tDocumentos: "
-                    + auxP.getPasajero().getDocumentos() + "\n");
+                    + auxP.getPasajero().getDocumentos() 
+                    + "\n\tRegistro: "
+                    + auxP.getPasajero().getRegistro()
+                    + "\n");
             auxP = auxP.getSiguiente();
         }
         jTextArea3.append("**********" + "MALETAS" + "**********" + "\n");
@@ -575,6 +697,9 @@ public class Ventana extends javax.swing.JFrame {
 
             auxC = auxC.getSiguiente();
         }
+
+        jTextArea6.append("\t----" + "Pila Documentos" + "-----" + "\n");
+
         while (auxE != null) {
             jTextArea5.append("\n\t----" + auxE.getEscritorio().getNombre() + "-----" + "\n");
             //Nodo_ColaEscritorios auxCC = auxE.getEscritorio().getCola().getCabeza();
@@ -583,18 +708,23 @@ public class Ventana extends javax.swing.JFrame {
                 jTextArea5.append("\t\n\tPasajero: "
                         + "Vacio"
                         + "\n\tMaletas:" + "Vacio"
+                        + "\n\tDocumentos:" + "Vacio"
+                        + "\n\tRegistro:" + "Vacio"
                         + "\n");
             } else {
                 jTextArea5.append("\t\n\tPasajero: "
                         + auxE.getEscritorio().getPasajero().getNombre()
                         + "\n\tMaletas:" + auxE.getEscritorio().getPasajero().getMaletas()
+                        + "\n\tDocumentos:" + auxE.getEscritorio().getPasajero().getDocumentos()
+                        + "\n\tRegistro:" + auxE.getEscritorio().getPasajero().getRegistro()
                         + "\n");
+
             }
 
             jTextArea5.append("\t----" + "Cola" + "-----" + "\n");
-            
+
             Nodo_ColaEscritorios auxCC = auxE.getEscritorio().getCola().getCabeza();
-        
+
             while (auxCC != null) {
                 if (auxCC.getPasajero() == null) {
                     jTextArea5.append("\n\tAvion: "
@@ -606,7 +736,18 @@ public class Ventana extends javax.swing.JFrame {
                 auxCC = auxCC.getSiguiente();
             }
 
+            Nodo_PilaEscritorios auxPi = auxE.getEscritorio().getPila().getCabeza();
+            jTextArea6.append("\n\tEscritorio: " + auxE.getEscritorio().getNombre());
+            while (auxPi != null) {
+
+                jTextArea6.append("\n\tDocumento: "
+                        + auxPi.getDocumento() + "\n");
+
+                auxPi = auxPi.getSiguiente();
+            }
+
             auxE = auxE.getSiguiente();
+
         }
 
         turnos = turnos + 1;

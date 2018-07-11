@@ -213,6 +213,7 @@ public class ListaDobleEnlazada {
         }
     }
      */
+    /*
     public void agregarPasajeros(int cantidad) {
         for (int i = 0; i < cantidad; i++) {
             int maletas = (int) Math.floor(Math.random() * 4 + 1);
@@ -221,7 +222,7 @@ public class ListaDobleEnlazada {
             agregarMaletas(maletas);
         }
     }
-
+*/
     public void agregarMaletas(int cantidad) {
         for (int i = 0; i < cantidad; i++) {
             listamaletas.insertarAlFinal(maletasss);

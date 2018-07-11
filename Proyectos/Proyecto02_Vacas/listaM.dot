@@ -1,0 +1,28 @@
+digraph G {
+subgraph cluster_0{
+label="Mantenimiento";
+nodo229765686[label="Estacion1
+ Nombre: Vacio
+Tipo: Vacio
+Pasajeros: Vacio
+Desabordaje: Vacio
+Mantenimiento: Vacio"];
+nodo229765686->nodo791107908;
+nodo791107908[label="Estacion2
+ Nombre: Vacio
+Tipo: Vacio
+Pasajeros: Vacio
+Desabordaje: Vacio
+Mantenimiento: Vacio"];
+nodo791107908->nodo1840771313;
+nodo1840771313[label="Estacion3
+ Nombre: Vacio
+Tipo: Vacio
+Pasajeros: Vacio
+Desabordaje: Vacio
+Mantenimiento: Vacio"];
+
+}subgraph cluster_1{
+label="Cola";
+
+}}
