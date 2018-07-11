@@ -1,0 +1,7 @@
+digraph listadoble{
+nodo368140704[label="Avion2 : 3"];
+nodo368140704->nodo1349728682;
+nodo1349728682->nodo368140704;
+nodo1349728682[label="Avion4 : 3"];
+
+}
